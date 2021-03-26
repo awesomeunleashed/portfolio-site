@@ -1,0 +1,6 @@
+export const ABOUT_NAME = 'About'
+export const ABOUT_PATH = '/about'
+export const HOME_NAME = 'Home'
+export const HOME_PATH = '/home'
+export const RESUME_NAME = 'Resume'
+export const RESUME_PATH = '/resume'

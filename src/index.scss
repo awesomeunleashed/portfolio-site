@@ -1,0 +1,43 @@
+$au-color: #8000ff;
+$au-color-secondary: #00a6cf;
+$main-max-width: 70rem;
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: black;
+    color: white;
+}
+
+.app {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header {
+    background: $au-color;
+    display: flex;
+    margin: 1rem;
+    padding: 0;
+    border: 1px solid white;
+    width: $main-max-width;
+    max-width: 100%;
+
+    a {
+        padding: 0.6rem;
+        margin: 0;
+        color: white;
+        text-decoration: none;
+        border-right: 1px solid white;
+
+        &.selected {
+            background: $au-color-secondary;
+        }
+
+        &:hover {
+            color: black;
+            background: white;
+        }
+    }
+}
