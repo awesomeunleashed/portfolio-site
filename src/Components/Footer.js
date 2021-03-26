@@ -1,7 +1,7 @@
 const Footer = () => (
   <div className='footer'>
     <div className='divider' />
-    © {new Date().getFullYear()} by Asher Tuggle.
+    <p>© {new Date().getFullYear()} by Asher Tuggle.</p>
   </div>
 )
 
