@@ -1,12 +1,14 @@
 $au-color: #8000ff;
 $au-color-secondary: #00a6cf;
 $main-max-width: 70rem;
+$site-margin: 1rem;
 
 body {
     margin: 0;
     font-family: sans-serif;
     background: black;
     color: white;
+    font-size: 1rem;
 }
 
 .app {
@@ -15,29 +17,106 @@ body {
     flex-direction: column;
 }
 
-.header {
-    background: $au-color;
+img.flip {
+    transform: scaleX(-1);
+}
+
+.divider {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid white;
+    margin-bottom: 1rem;
+}
+
+%site-section {
     display: flex;
-    margin: 1rem;
-    padding: 0;
-    border: 1px solid white;
     width: $main-max-width;
     max-width: 100%;
+}
+
+.header {
+    @extend .divider;
+    @extend %site-section;
+    margin: $site-margin;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+
+    .bar {
+        display: flex;
+        padding: 0 0.2rem;
+    }
+
+    img {
+        height: 2.5rem;
+    }
 
     a {
-        padding: 0.6rem;
-        margin: 0;
+        padding: 0.5rem;
+        margin: 0 0.2rem;
         color: white;
         text-decoration: none;
-        border-right: 1px solid white;
+        background: $au-color;
 
         &.selected {
-            background: $au-color-secondary;
+            color: $au-color;
+            background: white;
         }
 
         &:hover {
-            color: black;
+            color: $au-color-secondary;
             background: white;
         }
     }
+}
+
+%site-section-body {
+    display: flex;
+    width: $main-max-width;
+    max-width: 100%;
+    margin: 0 $site-margin $site-margin;
+    flex-direction: column;
+    text-align: center;
+}
+
+.body {
+    @extend %site-section-body;
+
+    img {
+        border: 1px solid white;
+    }
+
+    h1 {
+        text-transform: uppercase;
+    }
+}
+
+.projects {
+    a {
+        color: white;
+        text-decoration: none;
+        width: 20rem;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid white;
+        padding: 0.25rem;
+
+        
+
+        h2 {
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        img {
+            border: none;
+        }
+
+        span {
+            white-space: pre;
+        }
+    }
+}
+
+.footer {
+    @extend %site-section-body;
 }
