@@ -3,6 +3,7 @@ import ggjLogo from 'Images/ggj.png'
 import cotnLogo from 'Images/cotn1.png'
 import dwindleLogo from 'Images/dwindle.png'
 import projectMindLogo from 'Images/pm1.png'
+import reactLogo from 'Images/react.png'
 
 export const ABOUT_NAME = 'About'
 export const ABOUT_PATH = '/about'
@@ -10,6 +11,24 @@ export const HOME_NAME = 'Home'
 export const HOME_PATH = '/home'
 export const RESUME_NAME = 'Resume'
 export const RESUME_PATH = '/resume'
+
+export const CONTACT_METHODS = [
+  {
+    name: 'Email',
+    linkPrefix: 'mailto:',
+    value: 'ashertuggle@gmail.com'
+  },
+  {
+    name: 'Phone',
+    linkPrefix: 'tel:',
+    value: '719-201-4802'
+  },
+  {
+    name: 'LinkedIn',
+    linkPrefix: '',
+    value: 'https://www.linkedin.com/in/asher-tuggle'
+  }
+]
 
 export const PROJECTS = [
   {
@@ -45,6 +64,7 @@ export const PROJECTS = [
   {
     name: 'This Website',
     path: '/this-site',
+    image: reactLogo,
     description: 'This website is built with React and you can view the source on GitHub.'
   }
 ]
