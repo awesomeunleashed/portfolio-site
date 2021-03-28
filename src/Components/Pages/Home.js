@@ -1,9 +1,9 @@
-import coverImage from 'Images/coverimage2020.png'
+import coverImage from 'Images/coverimage2020.jpg'
 import { PROJECTS } from 'Util/constants'
 import ProjectLink from '../ProjectLink'
 
 const Home = () => (
-  <div className='body'>
+  <div className='content'>
     <img alt='' src={coverImage} />
     <span>I'm Asher Tuggle. I love programming anything, but game development is my passion. Welcome to my portfolio website.</span>
     <div className='divider' />

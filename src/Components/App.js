@@ -8,18 +8,20 @@ import Home from './Pages/Home'
 const App = () => (
   <div className='app'>
     <Header />
-    <Switch>
-      <Route path={HOME_PATH}>
-        <Home />
-      </Route>
-      <Route path={ABOUT_PATH}>
-        <About />
-      </Route>
-      <Route path='*'>
-        <Redirect to={HOME_PATH} />
-      </Route>
-    </Switch>
-    <Footer />
+    <div className='body'>
+      <Switch>
+        <Route path={HOME_PATH}>
+          <Home />
+        </Route>
+        <Route path={ABOUT_PATH}>
+          <About />
+        </Route>
+        <Route path='*'>
+          <Redirect to={HOME_PATH} />
+        </Route>
+      </Switch>
+      <Footer />
+    </div>
   </div>
 )
 

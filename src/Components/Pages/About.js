@@ -2,7 +2,7 @@ import { Fragment } from 'react'
 import { CONTACT_METHODS } from 'Util/constants'
 
 const About = () => (
-  <div className='body'>
+  <div className='content'>
     <h1>Contact</h1>
     <div className='contact'>
       <div>

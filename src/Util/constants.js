@@ -1,8 +1,8 @@
-import wsidLogo from 'Images/wsid1.png'
-import ggjLogo from 'Images/ggj.png'
-import cotnLogo from 'Images/cotn1.png'
-import dwindleLogo from 'Images/dwindle.png'
-import projectMindLogo from 'Images/pm1.png'
+import wsidLogo from 'Images/wsid1.jpg'
+import ggjLogo from 'Images/ggj.jpg'
+import cotnLogo from 'Images/cotn1.jpg'
+import dwindleLogo from 'Images/dwindle.jpg'
+import projectMindLogo from 'Images/pm1.jpg'
 import reactLogo from 'Images/react.png'
 
 export const ABOUT_NAME = 'About'
