@@ -13,7 +13,9 @@
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
-        "eject": "react-scripts eject"
+        "eject": "react-scripts eject",
+        "update-check": "npx npm-check-updates",
+        "update-all": "npx npm-check-updates -u && npm install"
     },
     "eslintConfig": {
         "extends": [
@@ -40,8 +42,8 @@
     },
     "devDependencies": {
         "@testing-library/jest-dom": "^5.11.10",
-        "@testing-library/react": "^11.2.5",
-        "@testing-library/user-event": "^12.8.3",
+        "@testing-library/react": "^11.2.6",
+        "@testing-library/user-event": "^13.1.1",
         "standard": "^16.0.3"
     }
 }
