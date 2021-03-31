@@ -1,9 +1,10 @@
 import { Redirect, Route, Switch } from 'react-router'
-import { ABOUT_PATH, HOME_PATH } from 'Util/constants'
+import { ABOUT_PATH, HOME_PATH, RESUME_PATH } from 'Util/constants'
 import Footer from './Footer'
 import Header from './Header'
 import About from './Pages/About'
 import Home from './Pages/Home'
+import Resume from './Pages/Resume'
 
 const App = () => (
   <div className='app'>
@@ -15,6 +16,9 @@ const App = () => (
         </Route>
         <Route path={ABOUT_PATH}>
           <About />
+        </Route>
+        <Route path={RESUME_PATH}>
+          <Resume />
         </Route>
         <Route path='*'>
           <Redirect to={HOME_PATH} />
