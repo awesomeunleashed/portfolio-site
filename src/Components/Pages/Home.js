@@ -1,4 +1,4 @@
-import coverImage from 'Images/coverimage2020.jpg'
+import coverImage from 'Content/coverimage2020.jpg'
 import { PROJECTS } from 'Util/constants'
 import ProjectLink from '../ProjectLink'
 

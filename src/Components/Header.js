@@ -5,9 +5,9 @@ const Header = () => {
   return (
     <div className='header'>
       <div className='bar'>
-        <NavLink className='link-button' to={HOME_PATH} activeClassName='selected'>{HOME_NAME}</NavLink>
-        <NavLink className='link-button' to={ABOUT_PATH} activeClassName='selected'>{ABOUT_NAME}</NavLink>
-        <NavLink className='link-button' to={RESUME_PATH} activeClassName='selected'>{RESUME_NAME}</NavLink>
+        <NavLink className='button' to={HOME_PATH} activeClassName='selected'>{HOME_NAME}</NavLink>
+        <NavLink className='button' to={ABOUT_PATH} activeClassName='selected'>{ABOUT_NAME}</NavLink>
+        <NavLink className='button' to={RESUME_PATH} activeClassName='selected'>{RESUME_NAME}</NavLink>
       </div>
       <h1>Asher Tuggle</h1>
     </div>

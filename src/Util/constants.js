@@ -1,9 +1,9 @@
-import wsidLogo from 'Images/wsid1.jpg'
-import ggjLogo from 'Images/ggj.jpg'
-import cotnLogo from 'Images/cotn1.jpg'
-import dwindleLogo from 'Images/dwindle.jpg'
-import projectMindLogo from 'Images/pm1.jpg'
-import reactLogo from 'Images/react.png'
+import wsidLogo from 'Content/wsid1.jpg'
+import ggjLogo from 'Content/ggj.jpg'
+import cotnLogo from 'Content/cotn1.jpg'
+import dwindleLogo from 'Content/dwindle.jpg'
+import projectMindLogo from 'Content/pm1.jpg'
+import reactLogo from 'Content/react.png'
 
 export const ABOUT_NAME = 'About'
 export const ABOUT_PATH = '/about'
@@ -66,5 +66,54 @@ export const PROJECTS = [
     path: '/this-site',
     image: reactLogo,
     description: 'This website is built with React and you can view the source on GitHub.'
+  }
+]
+
+export const SKILL_GROUPS = [
+  {
+    title: 'I Write In',
+    content: 'JavaScript/React, C#/.NET, Go, CSS'
+  },
+  {
+    title: 'I Am Trained In',
+    content: 'Agile, SAFe, pair programming, test-driven development, CI/CD'
+  },
+  {
+    title: 'I Build With',
+    content: 'Unity, Docker, Git, Gitlab pipelines, AWS'
+  },
+  {
+    title: 'I Have Also Used',
+    content: 'Robot Framework, HTML, JSON, XML, PostgreSQL, Apex, jQuery, Python, C++, Salesforce'
+  }
+]
+
+export const EXPERIENCE = [
+  {
+    title: '8/2018-Current',
+    content: 'Solutions Engineering Developer\nCompassion International'
+  },
+  {
+    title: '2/2017-7/2018',
+    content: 'Unity and .NET Engineer\nOne Sphera, Inc.'
+  },
+  {
+    title: '2/2016-1/2017',
+    content: 'Game Programmer\nRabid Troll Studios, LLC'
+  },
+  {
+    title: '1/2015-5/2017',
+    content: 'Teaching Assistant\nUniversity of Colorado Colorado Springs'
+  },
+  {
+    title: '5/2015-8/2015',
+    content: 'Intern\nAltia, Inc.'
+  }
+]
+
+export const EDUCATION = [
+  {
+    title: '8/2012-5/2017',
+    content: 'Bachelor of Innovation in Game Design and Development\nUniversity of Colorado Colorado Springs'
   }
 ]
