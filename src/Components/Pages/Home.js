@@ -1,4 +1,4 @@
-import coverImage from 'Content/coverimage2020.jpg'
+import coverImage from 'Content/cover.jpg'
 import { PROJECTS } from 'Util/constants'
 import ProjectLink from '../ProjectLink'
 
@@ -9,7 +9,7 @@ const Home = () => (
     <div className='divider' />
     <h1>Projects</h1>
     <div className='projects'>
-      {PROJECTS.map((p, i) => <ProjectLink key={i} {...p} />)}
+      {PROJECTS.map((p, i) => <ProjectLink key={i} {...p} index={i} />)}
     </div>
   </>
 )

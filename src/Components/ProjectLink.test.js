@@ -1,14 +1,15 @@
-import { render, getByText as getByTextInContainer, getByAltText } from '@testing-library/react'
+import { render, getByText as getByTextInContainer, getByTestId } from '@testing-library/react'
 import { MemoryRouter } from 'react-router'
-import { PROJECTS } from 'Util/constants'
+import { PROJECTS, SPRITE_INDEX_VAR } from 'Util/constants'
 import ProjectLink from './ProjectLink'
 
 describe('ProjectLink', () => {
   it('should render correctly', () => {
-    const project = PROJECTS[0]
+    const index = 2
+    const project = PROJECTS[index]
     const { getByText } = render(
       <MemoryRouter>
-        <ProjectLink {...project} />
+        <ProjectLink {...project} index={index} />
       </MemoryRouter>
     )
 
@@ -19,7 +20,7 @@ describe('ProjectLink', () => {
     expect(link).toHaveAttribute('href', project.path)
 
     expect(getByTextInContainer(link, project.name)).toBeInTheDocument()
-    expect(getByAltText(link, `${project.name} Preview`)).toHaveAttribute('src', project.image)
+    expect(getByTestId(link, 'preview')).toHaveStyle(`${SPRITE_INDEX_VAR}: ${index}`)
   })
 
   it('should render a normal <a> when using external URL', () => {

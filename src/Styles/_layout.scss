@@ -68,18 +68,15 @@
     @extend %site-section;
     flex-direction: column;
 
-    img {
+    .cover-image {
         border: $border-style;
         filter: grayscale(100%);
+        width: 100%;
+        height: 4rem;
+        object-fit: cover;
 
-        &.cover-image {
-            width: 100%;
-            height: 4rem;
-            object-fit: cover;
-
-            @media (min-width: $main-max-width) {
-                height: 9.5rem;
-            }
+        @media (min-width: $main-max-width) {
+            height: 9.5rem;
         }
     }
 }
@@ -109,17 +106,18 @@
         &:hover {
             box-shadow: $fuzz-shadow white;
 
-            img {
+            .preview {
                 filter: none;
             }
         }
 
-        img {
-            border: none;
+        .preview {
+            filter: grayscale(100%);
             height: 8rem;
+            margin: 0 $spacing $spacing;
             width: calc(100% - #{$spacing * 2});
-            object-fit: cover;
-            background: black;
+            background-image: url("../Content/projectPreviews.jpg");
+            background-position: center calc(var(--sprite-index) * -#{$preview-sprite-size});
         }
     }
 }
