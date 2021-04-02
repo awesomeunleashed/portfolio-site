@@ -28,10 +28,10 @@ describe('App', () => {
     })
   }
 
-  it('should redirect from unknown routes to home', () => {
+  it('should redirect from the root path to home', () => {
     let testLocation
     render(
-      <MemoryRouter initialEntries={['/bob']}>
+      <MemoryRouter initialEntries={['/']}>
         <App />
         <Route path='*' render={({ location }) => { testLocation = location }} />
       </MemoryRouter>

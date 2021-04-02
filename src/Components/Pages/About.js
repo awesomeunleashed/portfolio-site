@@ -1,5 +1,5 @@
 const About = () => (
-  <div className='content'>
+  <>
     <h1>About Me</h1>
     <p>
       I am a software engineer and programming enthusiast with a passion for developing games.
@@ -14,9 +14,9 @@ const About = () => (
       I never want to be trapped by the mindset of thinking something is impossible just because I have never done it before.
     </p>
     <p>
-      I am blessed to live and work in the beautiful Colorado Springs, CO.
+      I am blessed to live and work in the beautiful Colorado Springs, CO, with my wife Haley.
     </p>
-  </div>
+  </>
 )
 
 export default About

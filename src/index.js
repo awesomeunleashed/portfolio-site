@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import ReactDOM from 'react-dom'
-import './index.scss'
+import 'Styles/main.scss'
 import App from 'Components/App'
 import { HashRouter } from 'react-router-dom'
 

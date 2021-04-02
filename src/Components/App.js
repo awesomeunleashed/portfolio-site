@@ -1,6 +1,6 @@
-import { Redirect, Route, Switch } from 'react-router'
+import { Redirect, Route } from 'react-router'
 import { ABOUT_PATH, HOME_PATH, RESUME_PATH } from 'Util/constants'
-import Footer from './Footer'
+import Page from './Page'
 import Header from './Header'
 import About from './Pages/About'
 import Home from './Pages/Home'
@@ -10,21 +10,18 @@ const App = () => (
   <div className='app'>
     <Header />
     <div className='body'>
-      <Switch>
-        <Route path={HOME_PATH}>
-          <Home />
-        </Route>
-        <Route path={ABOUT_PATH}>
-          <About />
-        </Route>
-        <Route path={RESUME_PATH}>
-          <Resume />
-        </Route>
-        <Route path='*'>
-          <Redirect to={HOME_PATH} />
-        </Route>
-      </Switch>
-      <Footer />
+      <Route exact path='/'>
+        <Redirect to={HOME_PATH} />
+      </Route>
+      <Page path={HOME_PATH}>
+        <Home />
+      </Page>
+      <Page path={ABOUT_PATH}>
+        <About />
+      </Page>
+      <Page path={RESUME_PATH}>
+        <Resume />
+      </Page>
     </div>
   </div>
 )
