@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Asher Tuggle's Portfolio Website
+
+## Currently a work in progress. I plan to get this live soon, but for now, you can check out [the old site](https://ashertuggle.wixsite.com/portfolio)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
