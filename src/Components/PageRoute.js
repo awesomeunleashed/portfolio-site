@@ -3,12 +3,12 @@ import { Route } from 'react-router'
 import { CSSTransition } from 'react-transition-group'
 import Footer from './Footer'
 
-const Page = ({ path, children }) => {
+const PageRoute = ({ children, ...props }) => {
   const transitionRef = useRef(null)
   return (
-    <Route path={path}>
+    <Route {...props}>
       {({ match }) => (
-        <CSSTransition in={!!match} unmountOnExit classNames='fade' nodeRef={transitionRef} timeout={300}>
+        <CSSTransition in={!!match} unmountOnExit classNames='fade' nodeRef={transitionRef} timeout={600}>
           <div className='page' ref={transitionRef}>
             <div className='content'>
               {children}
@@ -21,4 +21,4 @@ const Page = ({ path, children }) => {
   )
 }
 
-export default Page
+export default PageRoute

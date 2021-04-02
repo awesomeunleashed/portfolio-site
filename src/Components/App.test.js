@@ -4,7 +4,7 @@ import { ABOUT_PATH, HOME_PATH, RESUME_PATH } from 'Util/constants'
 import App from './App'
 
 jest.mock('./Header', () => () => (<div data-testid='mock-header' />))
-jest.mock('./Footer', () => () => (<div data-testid='mock-footer' />))
+jest.mock('./PageRoute', () => jest.requireActual('react-router').Route)
 jest.mock('./Pages/Home', () => () => (<div data-testid='mock-home' />))
 jest.mock('./Pages/About', () => () => (<div data-testid='mock-about' />))
 jest.mock('./Pages/Resume', () => () => (<div data-testid='mock-resume' />))
@@ -23,7 +23,6 @@ describe('App', () => {
         </MemoryRouter>
       )
       expect(getByTestId('mock-header')).toBeInTheDocument()
-      expect(getByTestId('mock-footer')).toBeInTheDocument()
       expect(getByTestId(componentsByPath[path])).toBeInTheDocument()
     })
   }

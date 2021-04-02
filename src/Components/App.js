@@ -1,6 +1,6 @@
 import { Redirect, Route } from 'react-router'
 import { ABOUT_PATH, HOME_PATH, RESUME_PATH } from 'Util/constants'
-import Page from './Page'
+import PageRoute from './PageRoute'
 import Header from './Header'
 import About from './Pages/About'
 import Home from './Pages/Home'
@@ -13,15 +13,15 @@ const App = () => (
       <Route exact path='/'>
         <Redirect to={HOME_PATH} />
       </Route>
-      <Page path={HOME_PATH}>
+      <PageRoute path={HOME_PATH}>
         <Home />
-      </Page>
-      <Page path={ABOUT_PATH}>
+      </PageRoute>
+      <PageRoute path={ABOUT_PATH}>
         <About />
-      </Page>
-      <Page path={RESUME_PATH}>
+      </PageRoute>
+      <PageRoute path={RESUME_PATH}>
         <Resume />
-      </Page>
+      </PageRoute>
     </div>
   </div>
 )
