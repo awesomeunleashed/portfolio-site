@@ -21,4 +21,10 @@ describe('ProjectLink', () => {
     expect(getByTextInContainer(link, project.name)).toBeInTheDocument()
     expect(getByAltText(link, `${project.name} Preview`)).toHaveAttribute('src', project.image)
   })
+
+  it('should render a normal <a> when using external URL', () => {
+    const project = { ...PROJECTS[0], path: 'http://test-external-url.com' }
+    const { getByText } = render(<ProjectLink {...project} />)
+    expect(getByText(project.description).parentElement).toHaveAttribute('href', project.path)
+  })
 })

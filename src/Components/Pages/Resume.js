@@ -20,7 +20,7 @@ const Resume = () => (
           <br />
           {CONTACT_METHODS.map((c, i) => (
             <Fragment key={i}>
-              {c.name}: <a href={`${c.linkPrefix}${c.value}`} target='_blank' rel='noreferrer'>{c.value}</a>
+              {c.name}: <a href={`${c.linkPrefix}${c.value}`} className='link' target='_blank' rel='noreferrer'>{c.value}</a>
               <br />
             </Fragment>
           ))}

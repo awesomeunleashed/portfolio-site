@@ -5,7 +5,7 @@ const Footer = () => (
     <div className='divider' />
     <div className='wrap'>
       {CONTACT_METHODS.map((c, i) => (
-        <a key={i} href={`${c.linkPrefix}${c.value}`} target='_blank' rel='noreferrer'>{c.name}</a>
+        <a key={i} href={`${c.linkPrefix}${c.value}`} className='link' target='_blank' rel='noreferrer'>{c.name}</a>
       ))}
     </div>
     <span>

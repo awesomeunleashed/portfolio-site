@@ -63,7 +63,7 @@ export const PROJECTS = [
   },
   {
     name: 'This Website',
-    path: '/this-site',
+    path: 'https://github.com/awesomeunleashed/portfolio-site',
     image: reactLogo,
     description: 'This website is built with React and you can view the source on GitHub.'
   }
