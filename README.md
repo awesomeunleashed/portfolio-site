@@ -2,6 +2,8 @@
 
 ## Currently a work in progress. I plan to get this live soon, but for now, you can check out [the old site](https://ashertuggle.wixsite.com/portfolio)
 
+![Test & Deploy](https://github.com/awesomeunleashed/portfolio-site/actions/workflows/deploy.yml/badge.svg)
+
 ![Cover Image](social-image.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
