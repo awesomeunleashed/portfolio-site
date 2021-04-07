@@ -2,13 +2,13 @@ import { StrictMode } from 'react'
 import ReactDOM from 'react-dom'
 import 'Styles/main.scss'
 import App from 'Components/App'
-import { HashRouter } from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
 
 ReactDOM.render(
   <StrictMode>
-    <HashRouter>
+    <BrowserRouter basename='/portfolio-site'>
       <App />
-    </HashRouter>
+    </BrowserRouter>
   </StrictMode>,
   document.getElementById('root')
 )
