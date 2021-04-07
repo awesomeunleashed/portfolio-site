@@ -1,8 +1,8 @@
 # Asher Tuggle's Portfolio Website
 
-## Currently a work in progress. I plan to get this live soon, but for now, you can check out [the old site](https://ashertuggle.wixsite.com/portfolio)
-
 ![Test & Deploy](https://github.com/awesomeunleashed/portfolio-site/actions/workflows/deploy.yml/badge.svg)
+
+[Live Site](https://awesomeunleashed.github.io/portfolio-site) (on GitHub Pages, deployed with Github Actions)
 
 ![Cover Image](social-image.png)
 
