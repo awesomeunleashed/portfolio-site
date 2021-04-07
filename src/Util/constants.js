@@ -1,10 +1,15 @@
 export const ABOUT_NAME = 'About'
 export const ABOUT_PATH = '/about'
+export const COTN_PATH = '/champion-of-the-nine'
+export const DWINDLE_PATH = '/dwindle'
+export const GGJ_PATH = '/global-game-jam'
 export const HOME_NAME = 'Home'
 export const HOME_PATH = '/home'
+export const PM_PATH = '/project-mind'
 export const RESUME_NAME = 'Resume'
 export const RESUME_PATH = '/resume'
 export const SPRITE_INDEX_VAR = '--sprite-index'
+export const WSID_PATH = '/what-shines-in-darkness'
 
 export const CONTACT_METHODS = [
   {
@@ -27,27 +32,27 @@ export const CONTACT_METHODS = [
 export const PROJECTS = [
   {
     name: 'Global Game Jam',
-    path: '/global-game-jam',
+    path: GGJ_PATH,
     description: 'See the games I\'ve worked on at the Global Game Jam over the last few years.'
   },
   {
     name: 'What Shines in Darkness',
-    path: '/what-shines-in-darkness',
+    path: WSID_PATH,
     description: 'Do you find yourself captive,\ncold, empty, and sparkless?\nTake some of this lightning;\nit\'s What Shines in Darkness.'
   },
   {
     name: 'Champion of the Nine',
-    path: '/champion-of-the-nine',
+    path: COTN_PATH,
     description: 'Destroy your enemies and take what\'s theirs!'
   },
   {
     name: 'Dwindle',
-    path: '/dwindle',
+    path: DWINDLE_PATH,
     description: 'A survival and resource management game that takes place in a mine collapse in 1902.'
   },
   {
     name: 'Project Mind',
-    path: '/project-mind',
+    path: PM_PATH,
     description: 'A small game project with a focus on creating a high-quality user interface.'
   },
   {

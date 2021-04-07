@@ -1,11 +1,12 @@
 import { CONTACT_METHODS } from 'Util/constants'
+import ExternalLink from './ExternalLink'
 
 const Footer = () => (
   <div className='footer'>
     <div className='divider' />
     <div className='wrap'>
       {CONTACT_METHODS.map((c, i) => (
-        <a key={i} href={`${c.linkPrefix}${c.value}`} className='link' target='_blank' rel='noreferrer'>{c.name}</a>
+        <ExternalLink key={i} href={`${c.linkPrefix}${c.value}`}>{c.name}</ExternalLink>
       ))}
     </div>
     <span>

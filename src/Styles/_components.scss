@@ -1,6 +1,7 @@
 .divider {
     border-bottom: $border-style;
     margin-bottom: $spacing;
+    width: 100%;
 }
 
 .button {
@@ -9,6 +10,7 @@
     background: $main-color-dark;
     padding: 0.5rem;
     border: $border-style;
+    display: block;
     transition: all 0.25s;
 
     &:hover {

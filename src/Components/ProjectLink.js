@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { SPRITE_INDEX_VAR } from 'Util/constants'
+import ExternalLink from './ExternalLink'
 
 const ProjectLink = ({ name, description, path, index }) => {
   const props = { className: 'button' }
@@ -13,7 +14,7 @@ const ProjectLink = ({ name, description, path, index }) => {
   )
   return path.startsWith('/')
     ? <Link {...props} to={path}>{children}</Link>
-    : <a {...props} href={path} target='_blank' rel='noreferrer'>{children}</a>
+    : <ExternalLink {...props} href={path}>{children}</ExternalLink>
 }
 
 export default ProjectLink

@@ -1,6 +1,7 @@
 import { CONTACT_METHODS, EDUCATION, EXPERIENCE, SKILL_GROUPS } from 'Util/constants'
 import resumeFile from 'Content/Asher_Tuggle_Resume.pdf'
 import { Fragment } from 'react'
+import ExternalLink from 'Components/ExternalLink'
 
 const makeDisplay = content => content.map((c, i) => (
   <p key={i}>
@@ -20,7 +21,7 @@ const Resume = () => (
           <br />
           {CONTACT_METHODS.map((c, i) => (
             <Fragment key={i}>
-              {c.name}: <a href={`${c.linkPrefix}${c.value}`} className='link' target='_blank' rel='noreferrer'>{c.value}</a>
+              {c.name}: <ExternalLink href={`${c.linkPrefix}${c.value}`}>{c.value}</ExternalLink>
               <br />
             </Fragment>
           ))}
