@@ -2,7 +2,7 @@
 
 ![Test & Deploy](https://github.com/awesomeunleashed/portfolio-site/actions/workflows/deploy.yml/badge.svg)
 
-[Live Site](https://awesomeunleashed.github.io/portfolio-site) (on GitHub Pages, deployed with Github Actions)
+[Live Site](https://awesomeunleashed.github.io/portfolio-site) (deployed with GitHub Actions on GitHub Pages)
 
 ![Cover Image](social-image.png)
 
