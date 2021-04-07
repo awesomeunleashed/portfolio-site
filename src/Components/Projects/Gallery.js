@@ -6,7 +6,7 @@ const Gallery = ({ name, images }) => (
     <ImageGallery
       items={images.map(i => ({ original: i, originalAlt: '' }))}
       showThumbnails={false} additionalClass='project-gallery'
-      showIndex autoPlay slideInterval={6000} slideDuration={700}
+      showIndex autoPlay slideInterval={7000} slideDuration={700}
     />
     <div className='divider' />
   </>

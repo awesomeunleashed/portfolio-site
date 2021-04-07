@@ -1,5 +1,5 @@
 import { Redirect, Route } from 'react-router'
-import { ABOUT_PATH, COTN_PATH, GGJ_PATH, HOME_PATH, PM_PATH, RESUME_PATH, WSID_PATH } from 'Util/constants'
+import { ABOUT_PATH, COTN_PATH, DWINDLE_PATH, GGJ_PATH, HOME_PATH, PM_PATH, RESUME_PATH, WSID_PATH } from 'Util/constants'
 import PageRoute from './PageRoute'
 import Header from './Header'
 import About from './Pages/About'
@@ -9,6 +9,7 @@ import WSID from './Projects/WSID'
 import GGJ from './Projects/GGJ'
 import COTN from './Projects/COTN'
 import PM from './Projects/PM'
+import Dwindle from './Projects/Dwindle'
 
 const routes = [
   { path: HOME_PATH, Component: Home },
@@ -17,7 +18,8 @@ const routes = [
   { path: GGJ_PATH, Component: GGJ },
   { path: WSID_PATH, Component: WSID },
   { path: COTN_PATH, Component: COTN },
-  { path: PM_PATH, Component: PM }
+  { path: PM_PATH, Component: PM },
+  { path: DWINDLE_PATH, Component: Dwindle }
 ]
 
 const App = () => (

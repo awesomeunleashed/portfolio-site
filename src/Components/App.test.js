@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react'
 import { MemoryRouter, Route } from 'react-router'
-import { ABOUT_PATH, COTN_PATH, GGJ_PATH, HOME_PATH, PM_PATH, RESUME_PATH, WSID_PATH } from 'Util/constants'
+import { ABOUT_PATH, COTN_PATH, DWINDLE_PATH, GGJ_PATH, HOME_PATH, PM_PATH, RESUME_PATH, WSID_PATH } from 'Util/constants'
 import App from './App'
 
 jest.mock('./Header', () => () => (<div data-testid='mock-header' />))
@@ -12,6 +12,7 @@ jest.mock('./Projects/GGJ', () => () => (<div data-testid='mock-ggj' />))
 jest.mock('./Projects/WSID', () => () => (<div data-testid='mock-wsid' />))
 jest.mock('./Projects/COTN', () => () => (<div data-testid='mock-cotn' />))
 jest.mock('./Projects/PM', () => () => (<div data-testid='mock-pm' />))
+jest.mock('./Projects/Dwindle', () => () => (<div data-testid='mock-dwindle' />))
 
 describe('App', () => {
   const componentsByPath = {
@@ -21,7 +22,8 @@ describe('App', () => {
     [GGJ_PATH]: 'mock-ggj',
     [WSID_PATH]: 'mock-wsid',
     [COTN_PATH]: 'mock-cotn',
-    [PM_PATH]: 'mock-pm'
+    [PM_PATH]: 'mock-pm',
+    [DWINDLE_PATH]: 'mock-dwindle'
   }
   for (const path in componentsByPath) {
     it(`should render the correct components on ${path}`, () => {
