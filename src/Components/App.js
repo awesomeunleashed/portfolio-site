@@ -1,4 +1,4 @@
-import { Redirect, Route } from 'react-router'
+import { Redirect, Route, useLocation } from 'react-router'
 import { ABOUT_PATH, COTN_PATH, DWINDLE_PATH, GGJ_PATH, HOME_PATH, PM_PATH, RESUME_PATH, WSID_PATH } from 'Util/constants'
 import PageRoute from './PageRoute'
 import Header from './Header'
@@ -10,6 +10,7 @@ import GGJ from './Projects/GGJ'
 import COTN from './Projects/COTN'
 import PM from './Projects/PM'
 import Dwindle from './Projects/Dwindle'
+import { useEffect } from 'react'
 
 const routes = [
   { path: HOME_PATH, Component: Home },
@@ -22,20 +23,28 @@ const routes = [
   { path: DWINDLE_PATH, Component: Dwindle }
 ]
 
-const App = () => (
-  <div className='app'>
-    <Header />
-    <div className='body'>
-      <Route exact path='/'>
-        <Redirect to={HOME_PATH} />
-      </Route>
-      {routes.map(({ path, Component }, i) => (
-        <PageRoute key={i} path={path}>
-          <Component />
-        </PageRoute>
-      ))}
+const App = () => {
+  const { pathname } = useLocation()
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }, [pathname])
+
+  return (
+    <div className='app'>
+      <Header />
+      <div className='body'>
+        <Route exact path='/'>
+          <Redirect to={HOME_PATH} />
+        </Route>
+        {routes.map(({ path, Component }, i) => (
+          <PageRoute key={i} path={path}>
+            <Component />
+          </PageRoute>
+        ))}
+      </div>
     </div>
-  </div>
-)
+  )
+}
 
 export default App
