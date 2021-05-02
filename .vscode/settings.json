@@ -2,6 +2,8 @@
     "standard.run": "onType",
     "standard.autoFixOnSave": true,
     "javascript.validate.enable": false,
+    "standard.enable": true,
+    "prettier.enable": false,
     "[javascript]": {
         "editor.tabSize": 2
     }

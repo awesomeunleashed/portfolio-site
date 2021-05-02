@@ -10,7 +10,15 @@ const Footer = () => (
       ))}
     </div>
     <span>
-      © {new Date().getFullYear()} by Asher Tuggle.
+      © {new Date().getFullYear()} by{' '}
+      <a
+        // Secret link of secrecy
+        style={{ margin: 0, textDecoration: 'none', color: 'white', cursor: 'unset' }}
+        aria-hidden
+        href='https://d3i1x9w4tx8zhj.cloudfront.net/'
+      >
+        Asher Tuggle.
+      </a>
     </span>
   </div>
 )
