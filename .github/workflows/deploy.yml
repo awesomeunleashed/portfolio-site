@@ -5,21 +5,21 @@ on:
     branches:
       - main
     paths-ignore:
-      - '.gitignore'
-      - 'README.md'
+      - ".gitignore"
+      - "README.md"
 
 jobs:
   test-and-deploy:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-node@v1
-      with:
-        node-version: '14.x'
-    - run: npm ci
-    - run: npm test
-    - run: npm run build
-    - uses: JamesIves/github-pages-deploy-action@4.1.1
-      with:
-        branch: gh-pages
-        folder: build
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: "14.x"
+      - run: npm ci
+      - run: npm test
+      - run: PUBLIC_URL="" npm run build
+      - uses: JamesIves/github-pages-deploy-action@4.1.1
+        with:
+          branch: gh-pages
+          folder: build
