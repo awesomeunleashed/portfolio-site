@@ -1,0 +1,9 @@
+{
+  "clearMocks": true,
+  "testEnvironment": "jsdom",
+  "modulePaths": ["<rootDir>/src/"],
+  "moduleNameMapper": {
+    "Content/.*": "<rootDir>/src/__mocks__/content.ts"
+  },
+  "setupFilesAfterEnv": ["<rootDir>/src/setupTests.ts"]
+}
