@@ -24,8 +24,9 @@ const About = () => {
         just because I have never done it before.
       </p>
       <p>
-        I am blessed to live and work in the beautiful Colorado Springs, CO,
-        with my wife and children.
+        I am blessed to live and work in the beautiful Colorado Springs, CO with
+        my wife and children. In my free time, I enjoy playing board and video
+        games with family and friends.
       </p>
     </>
   );

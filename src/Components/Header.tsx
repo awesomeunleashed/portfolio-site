@@ -11,13 +11,13 @@ import {
 } from "Util/constants";
 
 const Header = () => (
-  <div className="flex w-full items-center justify-between bg-stone-300 py-2 max-sm:flex-col sm:py-4 sm:pl-4 sm:pr-6">
-    <div className="mb-2 flex max-sm:max-w-full sm:mb-0">
+  <div className="flex w-full items-center sm:justify-between justify-around border-b border-stone-500 bg-stone-300 py-1 flex-wrap sm:py-4 px-1 sm:pl-4 sm:pr-6">
+    <div className="m-1 flex max-sm:max-w-full mr-2 sm:mb-0">
       <NavLink
         end
         className={({ isActive }) =>
           classNames(
-            "rounded-r-none max-sm:rounded-l-none max-sm:text-sm",
+            "rounded-r-none max-sm:text-sm",
             classes.button.base,
             isActive ? classes.button.selected : primary
           )
@@ -43,7 +43,7 @@ const Header = () => (
         end
         className={({ isActive }) =>
           classNames(
-            "rounded-l-none max-sm:rounded-r-none max-sm:text-sm",
+            "rounded-l-none max-sm:text-sm",
             classes.button.base,
             isActive ? classes.button.selected : primary
           )
@@ -53,7 +53,7 @@ const Header = () => (
         {RESUME_NAME}
       </NavLink>
     </div>
-    <div className="font-headers text-xl lowercase text-cyan-800 sm:text-3xl">
+    <div className="font-headers mx-1 text-xl lowercase text-cyan-800 sm:text-3xl my-1">
       Asher Tuggle
     </div>
   </div>
