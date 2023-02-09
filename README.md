@@ -4,6 +4,8 @@
 
 ![Cover Image](social-image.png)
 
+© 2023 by Asher Tuggle.
+
 ## Available Scripts
 
 In the project directory, you can run:
