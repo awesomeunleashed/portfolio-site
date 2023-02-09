@@ -11,8 +11,8 @@ import {
 } from "Util/constants";
 
 const Header = () => (
-  <div className="flex w-full items-center sm:justify-between justify-around border-b border-stone-500 bg-stone-300 py-1 flex-wrap sm:py-4 px-1 sm:pl-4 sm:pr-6">
-    <div className="m-1 flex max-sm:max-w-full mr-2 sm:mb-0">
+  <div className="flex w-full flex-wrap items-center justify-around border-b border-stone-500 bg-stone-300 py-1 px-1 sm:justify-between sm:py-4 sm:pl-4 sm:pr-6">
+    <div className="m-1 mr-2 flex max-sm:max-w-full sm:mb-0">
       <NavLink
         end
         className={({ isActive }) =>
@@ -53,7 +53,7 @@ const Header = () => (
         {RESUME_NAME}
       </NavLink>
     </div>
-    <div className="font-headers mx-1 text-xl lowercase text-cyan-800 sm:text-3xl my-1">
+    <div className="mx-1 my-1 font-headers text-xl lowercase text-cyan-800 sm:text-3xl">
       Asher Tuggle
     </div>
   </div>
