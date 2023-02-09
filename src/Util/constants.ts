@@ -8,7 +8,7 @@ export const HOME_PATH = "/";
 export const PM_PATH = "/project-mind";
 export const RESUME_NAME = "Resume";
 export const RESUME_PATH = "/resume";
-export const SPRITE_INDEX_VAR = "--sprite-index";
+export const STATS_PATH = "/stats";
 export const WSID_PATH = "/what-shines-in-darkness";
 
 export const CONTACT_METHODS = [

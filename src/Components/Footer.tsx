@@ -16,17 +16,7 @@ const Footer = () => (
         </ExternalLink>
       ))}
     </div>
-    <span>
-      © {new Date().getFullYear()} by{" "}
-      <a
-        // Secret link of secrecy
-        className="cursor-[inherit] text-white no-underline"
-        aria-hidden
-        href="https://d3i1x9w4tx8zhj.cloudfront.net/"
-      >
-        Asher Tuggle.
-      </a>
-    </span>
+    <span>© {new Date().getFullYear()} by Asher Tuggle.</span>
   </div>
 );
 
