@@ -16,14 +16,12 @@ import {
   HOME_PATH,
   PM_PATH,
   RESUME_PATH,
-  STATS_PATH,
   WSID_PATH,
 } from "Util/constants";
 
 const Home = lazy(() => import("Components/Pages/Home"));
 const About = lazy(() => import("Components/Pages/About"));
 const Resume = lazy(() => import("Components/Pages/Resume"));
-const Stats = lazy(() => import("Components/Pages/Stats"));
 const COTN = lazy(() => import("Components/Projects/COTN"));
 const Dwindle = lazy(() => import("Components/Projects/Dwindle"));
 const GGJ = lazy(() => import("Components/Projects/GGJ"));
@@ -41,7 +39,6 @@ const router = createBrowserRouter([
       { element: <GGJ />, path: GGJ_PATH },
       { element: <PM />, path: PM_PATH },
       { element: <WSID />, path: WSID_PATH },
-      { element: <Stats />, path: STATS_PATH },
     ],
     element: <App />,
     errorElement: <Navigate to={HOME_PATH} replace />,
