@@ -87,8 +87,12 @@ export const SKILL_GROUPS = [
 
 export const EXPERIENCE = [
   {
+    content: "Senior Client Engineer\nDire Wolf Digital",
+    title: "4/2023-Current",
+  },
+  {
     content: "Software Engineer\nCast.app",
-    title: "4/2021-Current",
+    title: "4/2021-4/2023",
   },
   {
     content: "Solutions Engineering Developer\nCompassion International",
