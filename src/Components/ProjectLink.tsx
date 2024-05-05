@@ -12,7 +12,7 @@ interface ProjectLinkProps {
 
 const ProjectLink = ({ description, index, name, path }: ProjectLinkProps) => {
   const className =
-    "flex flex-col w-min max-w-full border border-stone-500 items-center space-y-4 bg-purple-900 px-4 py-3 sm:px-6 sm:py-5 text-center transition-colors hover:bg-stone-300 hover:text-purple-900";
+    "flex flex-col w-min max-w-full border border-stone-500 items-center space-y-4 hover:bg-none bg-gradient-to-b from-cyan-900 to-cyan-950 px-4 py-3 sm:px-6 sm:py-5 text-center transition-colors hover:bg-stone-300 hover:text-purple-900";
   const children = (
     <>
       <h2 className="flex min-h-[3.5rem] items-center font-headers text-xl uppercase">

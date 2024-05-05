@@ -11,7 +11,7 @@ import {
 } from "Util/constants";
 
 const Header = () => (
-  <div className="flex w-full flex-wrap items-center justify-around border-b border-stone-500 bg-stone-300 py-1 px-1 sm:justify-between sm:py-4 sm:pl-4 sm:pr-6">
+  <div className="flex w-full flex-wrap items-center justify-around border-b border-stone-500 bg-gradient-to-r from-stone-200 to-stone-400 py-1 px-1 sm:justify-between sm:py-4 sm:pl-4 sm:pr-6">
     <div className="m-1 mr-2 flex max-sm:max-w-full sm:mb-0">
       <NavLink
         end
