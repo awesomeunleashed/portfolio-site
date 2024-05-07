@@ -4,8 +4,8 @@
     "noEmit": true,
     "lib": ["DOM"],
     "jsx": "react-jsx",
-    "baseUrl": "./src"
+    "paths": { "*": ["./src/*"] }
   },
-  "extends": "@tsconfig/node16/tsconfig.json",
+  "extends": "@tsconfig/recommended",
   "include": ["src/**/*", "webpack.config.ts"]
 }
