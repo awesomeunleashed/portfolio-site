@@ -38,7 +38,7 @@
   "devDependencies": {
     "@babel/preset-env": "^7.24.5",
     "@babel/preset-react": "^7.24.1",
-    "@babel/preset-typescript": "^7.24.1",
+    "@babel/preset-typescript": "^7.26.0",
     "@babel/register": "^7.23.7",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.13",
     "@testing-library/jest-dom": "^6.4.5",
