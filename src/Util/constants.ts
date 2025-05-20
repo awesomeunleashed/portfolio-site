@@ -67,11 +67,11 @@ export const PROJECTS = [
 
 export const SKILL_GROUPS = [
   {
-    content: "TypeScript, JavaScript, C#/.NET, Go, CSS",
+    content: "C#/.NET, TypeScript, JavaScript, Go, CSS",
     title: "I Write In",
   },
   {
-    content: "React, Unity, GitHub Actions, Jest, Docker, Terraform",
+    content: "Unity, React, GitHub Actions, Jest, Docker, Terraform",
     title: "I Build With",
   },
   {
