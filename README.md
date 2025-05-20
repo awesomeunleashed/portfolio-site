@@ -4,7 +4,7 @@
 
 ![Cover Image](social-image.png)
 
-© 2024 by Asher Tuggle.
+© 2025 by Asher Tuggle.
 
 ## Available Scripts
 
