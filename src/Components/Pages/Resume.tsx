@@ -47,29 +47,29 @@ const Resume = () => {
             Located in Colorado Springs, CO
           </p>
           <div className={dividerClass} />
-          <h2 className={classes.h2}>Experience</h2>
-          {makeDisplay(EXPERIENCE)}
-          <div className={dividerClass} />
-        </div>
-        <div className={sectionClass}>
           <h2 className={classes.h2}>Skills</h2>
           {makeDisplay(SKILL_GROUPS)}
           <div className={dividerClass} />
           <h2 className={classes.h2}>Education</h2>
           {makeDisplay(EDUCATION)}
           <div className={dividerClass} />
-          <a
-            className={classNames(
-              classes.button.base,
-              classes.button.primary,
-              "mx-auto w-fit"
-            )}
-            href={resumeFile}
-            download
-          >
-            Download Full Resume
-          </a>
         </div>
+        <div className={sectionClass}>
+          <h2 className={classes.h2}>Experience</h2>
+          {makeDisplay(EXPERIENCE)}
+          <div className={dividerClass} />
+        </div>
+        <a
+          className={classNames(
+            classes.button.base,
+            classes.button.primary,
+            "mx-auto w-fit"
+          )}
+          href={resumeFile}
+          download
+        >
+          Download Full Resume
+        </a>
       </div>
     </>
   );

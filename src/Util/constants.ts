@@ -71,12 +71,12 @@ export const SKILL_GROUPS = [
     title: "I Write In",
   },
   {
-    content: "Unity, React, GitHub Actions, Jest, Docker, Terraform",
+    content: "Unity, React, Node.js, GitHub Actions, Jest, Docker, Terraform",
     title: "I Build With",
   },
   {
     content:
-      "Node.js, PostgreSQL, Cypress, GitLab Pipelines, AWS, GCP, Python, jQuery, C++, Apex",
+      "PostgreSQL, Cypress, GitLab Pipelines, AWS, GCP, Python, jQuery, C++",
     title: "I Have Also Used",
   },
   {
@@ -87,40 +87,44 @@ export const SKILL_GROUPS = [
 
 export const EXPERIENCE = [
   {
-    content: "Senior Client Engineer\nDire Wolf Digital",
-    title: "4/2023-Current",
+    content: "07/2025 - Current",
+    title: "Client Technical Lead\nDire Wolf Digital",
   },
   {
-    content: "Software Engineer\nCast.app",
-    title: "4/2021-4/2023",
+    content: "04/2023 - Current",
+    title: "Senior Client Engineer\nDire Wolf Digital",
   },
   {
-    content: "Solutions Engineering Developer\nCompassion International",
-    title: "8/2018-4/2021",
+    content: "04/2021 - 04/2023",
+    title: "Software Engineer\nCast.app",
   },
   {
-    content: "Unity and .NET Engineer\nOne Sphera, Inc.",
-    title: "2/2017-7/2018",
+    content: "08/2018 - 04/2021",
+    title: "Solutions Engineering Developer\nCompassion International",
   },
   {
-    content: "Game Programmer\nRabid Troll Studios, LLC",
-    title: "2/2016-1/2017",
+    content: "02/2017 - 07/2018",
+    title: "Unity and .NET Engineer\nOne Sphera",
   },
   {
-    content: "Teaching Assistant\nUniversity of Colorado Colorado Springs",
-    title: "1/2015-5/2017",
+    content: "01/2015 - 05/2017",
+    title: "Teaching Assistant\nUniversity of Colorado Colorado Springs",
   },
   {
-    content: "Intern\nAltia, Inc.",
-    title: "5/2015-8/2015",
+    content: "02/2016 - 01/2017",
+    title: "Game Programmer\nRabid Troll Studios",
+  },
+  {
+    content: "05/2015 - 8/2015",
+    title: "Intern\nAltia",
   },
 ];
 
 export const EDUCATION = [
   {
-    content:
+    content: "08/2012 - 05/2017",
+    title:
       "Bachelor of Innovation in Game Design and Development\nUniversity of Colorado Colorado Springs",
-    title: "8/2012-5/2017",
   },
 ];
 
